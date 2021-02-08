@@ -7,6 +7,17 @@ Room is a part of android framework to enhance the database integration with the
 
 ## RoomDemo demonstrates the CRUD operations:
 
-* Add Note and display using Recycler View
-
+* Retrieve data and display using Recycler View
 <img src= "app/README_gif/ezgif.com-gif-maker.gif" width="300" height="590">
+
+* Update Note 
+<img src= "app/README_gif/update.gif" width="300" height="590">
+
+ * Search for Note
+ <img src= "app/README_gif/search.gif" width="300" height="590">
+ 
+ * Delete Note records from database
+ <img src= "app/README_gif/delete.gif" width="300" height="590">
+ 
+ 
+ 
