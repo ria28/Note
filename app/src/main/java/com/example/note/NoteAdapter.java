@@ -41,6 +41,9 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder> im
 
     public void setNotes(List<Note> notes) {
         this.notes = notes;
+        //===================================================addition
+        AllNotes=new ArrayList<>(notes);
+
         notifyDataSetChanged();
     }
 
@@ -64,7 +67,7 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder> im
                 filteredList.addAll(AllNotes);
 
             else
-                for (Note note : notes)
+                for (Note note : AllNotes)
                     if (note.getTitle().toLowerCase().contains(charSequence.toString().toLowerCase()))
                         filteredList.add(note);
 
@@ -78,7 +81,7 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder> im
         //runs in  ui thread
         protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
             notes.clear();
-            notes.addAll((Collection<? extends Note>) filterResults);
+            notes.addAll((Collection<? extends Note>) filterResults.values);
             notifyDataSetChanged();
 
         }
