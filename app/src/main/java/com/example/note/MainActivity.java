@@ -185,7 +185,8 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "All notes deleted", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.search:
-
+            case R.id.report:
+                Toast.makeText(this,"report??",Toast.LENGTH_LONG).show();
             default:
                 return super.onOptionsItemSelected(item);
         }

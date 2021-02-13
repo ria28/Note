@@ -19,12 +19,6 @@
 <!--        android:textColor="#ECE4E4"-->
 <!--        android:textColorHint="#F1F3E4" />-->
 
-    <androidx.appcompat.widget.SearchView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        />
-
 
 
     <androidx.recyclerview.widget.RecyclerView
